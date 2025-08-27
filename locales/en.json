@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "title": "Pejman Kiamehr | Front-End Developer (Next.js & React)",
+    "description": "Portfolio of Pejman Kiamehr, a front-end developer skilled in Next.js and React. Explore my projects, skills, and contact information."
+  },
+  "navbar": {
+    "link1": "Home",
+    "link2": "About me",
+    "link3": "Services",
+    "link4": "My Work",
+    "link5": "Contact me",
+    "contact": "contact "
+  },
+  "header": {
+    "h3": "Hi there! 👋 I’m Pejman Kiamehr",
+    "title": "React.js + Next.js frontend web developer.",
+    "btn1": "contact me",
+    "btn2": "my resume"
+  },
+  "aboutme": {
+    "h4": "Introduction",
+    "title": "About me",
+    "description": "a Front-end Developer focused on React and Next.js.I love building responsive user interfaces and creating smooth, user-friendly experiences.I have hands-on experience with APIs and a solid understanding of SEO principles, and I’m always eager to learn new things and sharpen my skills.My goal is to grow as part of a dynamic, professional team and build projects that truly make an impact. 🚀",
+    "boxtitle1": "Framework/UI",
+    "boxdescription1": "React,Next.js,TailwindCss,MaterialUI,ReactBootstrap,Rest-API",
+    "boxtitle2": "fundamentals",
+    "boxdescription2": "HTML,CSS,JavaScript(ES6+),(axios/fetch),Media-Query,Bootstrap,Responsive-Desing",
+    "boxtitle3": "Projects",
+    "boxdescription3": "Build more than 7 projects",
+    "tools": "Tools I use"
+  },
+  "services": {
+    "h4": "What I offer",
+    "title": "My Services",
+    "description": "I build responsive and user-friendly websites and web applications using modern tools like Tailwind CSS, Material-UI, and React Bootstrap, delivering visually appealing UI solutions for web and mobile platforms.",
+    "boxtitle1": "Web design",
+    "boxdescription1": "Web development is the process of building, programming...",
+    "boxtitle2": "web app",
+    "boxdescription2": "Web app development involves creating software that runs on web browsers, providing seamless functionality across devices...",
+    "boxtitle3": "Responsive design",
+    "boxdescription3": "UI/UX design focuses on creating a seamless user experience...",
+    "boxtitle4": "UI Design Solutions",
+    "boxdescription4": "UI design solutions involve crafting intuitive and responsive user interfaces using modern tools like Tailwind CSS, Material-UI, and React Bootstrap, ensuring seamless experiences across web and mobile platforms...",
+    "boxbtn": "Read more"
+  },
+  "work": {
+    "h4": "My portfolio",
+    "title": "My latest work",
+    "description": "Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.",
+    "projecttitle1": "Shop project",
+    "projectdescription1": "Build by React.js & Tailwind & ReduxToolkit",
+    "projecttitle2": "web site company",
+    "projectdescription2": "Build by React&vite.js & Typescript & Tailwind & Zustand",
+    "projecttitle3": "Shop project",
+    "projectdescription3": "Build by React&vite.js & ReactBootstrap & ContextApi",
+    "projecttitle4": "test",
+    "projectdescription4": "test",
+    "btn": "Show more"
+  },
+  "contact": {
+    "h4": "Contact whit me",
+    "title": "Get in touch",
+    "description": "I'd love to hear from you! If you have any questions, comments, or feedback, please use the from below.",
+    "placeholder1": "enter your name",
+    "placeholder2": "enter your email",
+    "placeholder3": "enter your message",
+    "btn": "submit now"
+  },
+  "footer": {
+    "link1": "Instagram",
+    "link2": "LinkdIn",
+    "link3": "Github",
+    "link4": "WhatsApp"
+  },
+  "languageselect": {
+    "language": "english"
+  },
+  "notfound":{
+"title": "Page not found", 
+"desc": "The page you’re looking for doesn’t exist.", 
+"back": "Back to Home" 
+  }
+}

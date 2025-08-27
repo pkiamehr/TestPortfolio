@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@sections/*": ["components/sections/*"],
+      "@layout/*": ["components/layout/*"],
+      "@providers/*": ["components/providers/*"],
+      "@lib/*": ["lib/*"],
+      "@utils/*": ["lib/utils/*"],
+      "@locales/*": ["locales/*"],
+      "@public/*": ["public/*"],
+      "@icons/*": ["public/icons/*"],
+      "@images/*": ["public/images/*"]
+    }
+  }
+}
