@@ -25,13 +25,15 @@ const Work = ({ dict }) => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="grid [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))] my-6 gap-5 dark:text-black"
       >
-        <motion.div whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-1.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
-          <a
-            href="https://project1.kiamehr.dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
-          >
+        <motion.a
+          href="https://project1.kiamehr.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileFocus={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className='aspect-square  bg-[url("/images/project-1.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'
+        >
+          <div className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
             <div>
               <h2 className=" font-semibold">{dict.work.projecttitle1}</h2>
               <p className=" text-xs text-gray-700">{dict.work.projectdescription1}</p>
@@ -39,13 +41,13 @@ const Work = ({ dict }) => {
             <div className=" border rounded-full border-black w-11 aspect-square flex items-center justify-center shadow:[2px_2px_0_#000] group-hover:bg-lime-300 transition">
               <Image src={assets.send_icon} alt="work send icon" className=" w-3 " />
             </div>
-          </a>
-        </motion.div>
-        <motion.div whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-2.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://project2.kiamehr.dev/"
+          </div>
+        </motion.a>
+        <motion.a
+          href="https://project2.kiamehr.dev/"
+          target="_blank"
+          rel="noopener noreferrer" whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-2.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
+          <div
             className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
           >
             <div>
@@ -55,13 +57,13 @@ const Work = ({ dict }) => {
             <div className=" border rounded-full border-black w-11 aspect-square flex items-center justify-center shadow:[2px_2px_0_#000] group-hover:bg-lime-300 transition">
               <Image src={assets.send_icon} alt="work send icon" className=" w-3" />
             </div>
-          </a>
-        </motion.div>
-        <motion.div whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-3.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://project3.kiamehr.dev/"
+          </div>
+        </motion.a>
+        <motion.a
+          href="https://project3.kiamehr.dev/"
+          target="_blank"
+          rel="noopener noreferrer" whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-3.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
+          <div
             className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
           >
             <div>
@@ -71,8 +73,8 @@ const Work = ({ dict }) => {
             <div className=" border rounded-full border-black w-11 aspect-square flex items-center justify-center shadow:[2px_2px_0_#000] group-hover:bg-lime-300 transition">
               <Image src={assets.send_icon} alt="work send icon" className=" w-3" />
             </div>
-          </a>
-        </motion.div>
+          </div>
+        </motion.a>
       </motion.div>
       <motion.a
         initial={{ opacity: 0 }}
