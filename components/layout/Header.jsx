@@ -11,7 +11,7 @@ export default function Header({ dict ,lang }) {
       className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4"
     >
       <motion.div initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ duration: 0.8, type: "spring", stiffness: 100 }}>
-        <Image src={assets.profile_img} className="rounded-full w-38 h-48" alt="kimehr" />
+        <Image src={assets.profile_img} className="rounded-full w-40 " alt="kimehr" />
       </motion.div>
       <motion.h3 initial={{ y: -20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.6, delay: 0.1 }} className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
         {dict.header.h3}
