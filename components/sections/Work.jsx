@@ -50,9 +50,9 @@ const Work = ({ dict }) => {
               <h2 className=" font-semibold">{dict.work.projecttitle2}</h2>
               <p className=" text-xs text-gray-700">{dict.work.projectdescription2}</p>
             </div>
-            <div className=" border rounded-full border-black w-11 aspect-square flex items-center justify-center shadow:[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+            <a href="project1.kiamehr.dev" className=" border rounded-full border-black w-11 aspect-square flex items-center justify-center shadow:[2px_2px_0_#000] group-hover:bg-lime-300 transition">
               <Image src={assets.send_icon} alt="work send icon" className=" w-3" />
-            </div>
+            </a>
           </div>
         </motion.div>
         <motion.div
