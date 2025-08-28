@@ -28,6 +28,8 @@ const Work = ({ dict }) => {
         <motion.div whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-1.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
           <a
             href="https://project1.kiamehr.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
             className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
           >
             <div>
@@ -40,7 +42,12 @@ const Work = ({ dict }) => {
           </a>
         </motion.div>
         <motion.div whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-2.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
-          <a href="https://project2.kiamehr.dev/" className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://project2.kiamehr.dev/"
+            className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
+          >
             <div>
               <h2 className=" font-semibold">{dict.work.projecttitle2}</h2>
               <p className=" text-xs text-gray-700">{dict.work.projectdescription2}</p>
@@ -51,7 +58,12 @@ const Work = ({ dict }) => {
           </a>
         </motion.div>
         <motion.div whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-3.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
-          <a href="https://project3.kiamehr.dev/" className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://project3.kiamehr.dev/"
+            className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
+          >
             <div>
               <h2 className=" font-semibold">{dict.work.projecttitle3}</h2>
               <p className=" text-xs text-gray-700">{dict.work.projectdescription3}</p>
