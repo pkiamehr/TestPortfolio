@@ -35,7 +35,7 @@ const Work = ({ dict }) => {
               <p className=" text-xs text-gray-700">{dict.work.projectdescription1}</p>
             </div>
             <div className=" border rounded-full border-black w-11 aspect-square flex items-center justify-center shadow:[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-              <Image src={assets.send_icon} alt="work send icon" className=" w-3" />
+              <Image src={assets.send_icon} alt="work send icon" className=" w-3 " />
             </div>
           </a>
         </motion.div>
