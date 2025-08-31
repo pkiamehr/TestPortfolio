@@ -4,7 +4,7 @@ import { assets } from "@utils/assets";
 import Image from "next/image";
 import { motion } from "motion/react";
 
-export default function Header({ dict ,lang }) {
+export default function Header({ dict, lang }) {
   return (
     <div
       key={dict.header.title} // کلید برای رندر مجدد هنگام تغییر زبان
@@ -43,6 +43,16 @@ export default function Header({ dict ,lang }) {
         >
           {dict.header.btn2}
           <Image src={assets.download_icon} className="w-4" alt="Download icon" />
+        </motion.a>
+        <motion.a
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+          href="#work"
+          className="px-10 py-2 border rounded-full border-white bg-black text-white flex items-center gap-2 dark:bg-transparent  hover:-translate-y-1 duration-500  dark:hover:bg-darkHover"
+        >
+          {dict.header.btn3}
+          <Image src={assets.right_arrow_white} className="w-4" alt="Arrow icon" />
         </motion.a>
       </div>
     </div>

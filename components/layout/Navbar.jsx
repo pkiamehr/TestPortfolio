@@ -60,11 +60,11 @@ function Navbar({ lang, dict }) {
 
       <nav
         className={` w-full fixed px-5 lg:px-8 xl:px-[8%] py-3 flex items-center justify-between z-50 ${
-          isScroll ? " bg-white bg-white/50  backdrop-blur-lg shadow-xs dark:bg-darkTheme dark:shadow-gray-100" : ""
+          isScroll ? " bg-white bg-white/50   shadow-xs dark:bg-darkTheme dark:shadow-gray-100" : ""
         }`}
       >
-        <a href="#top">
-          <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt="Website Logo" className=" w-28 mr-14 cursor-pointer" />
+        <a href="#top" className=" outline-0">
+          <Image src={isDarkMode ? assets.logo_dark : assets.logo} alt="Website Logo" className=" w-30 mr-10 cursor-pointer" />
         </a>
 
         <ul className={` hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? "" : " bg-white bg-white/50 dark:border dark:border-white dark:bg-transparent shadow-xs"} `}>

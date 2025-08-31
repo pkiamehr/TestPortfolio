@@ -33,7 +33,7 @@ const Work = ({ dict }) => {
           transition={{ duration: 0.3 }}
           className='aspect-square  bg-[url("/images/project-1.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'
         >
-          <div className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+          <div className=" bg-white w-10/12 rounded-xl border-1 border-gray-300 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
             <div>
               <h2 className=" font-semibold">{dict.work.projecttitle1}</h2>
               <p className=" text-xs text-gray-700">{dict.work.projectdescription1}</p>
@@ -48,7 +48,7 @@ const Work = ({ dict }) => {
           target="_blank"
           rel="noopener noreferrer" whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-2.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
           <div
-            className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
+            className=" bg-white w-10/12 rounded-xl border-1 border-gray-300 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
           >
             <div>
               <h2 className=" font-semibold">{dict.work.projecttitle2}</h2>
@@ -64,7 +64,7 @@ const Work = ({ dict }) => {
           target="_blank"
           rel="noopener noreferrer" whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-3.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
           <div
-            className=" bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
+            className=" bg-white w-10/12 rounded-xl border-1 border-gray-300 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
           >
             <div>
               <h2 className=" font-semibold">{dict.work.projecttitle3}</h2>
