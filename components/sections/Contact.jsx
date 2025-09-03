@@ -2,7 +2,7 @@
 
 import { assets } from "@utils/assets.js";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import { useTheme } from "@providers/ThemeProvider";
 
