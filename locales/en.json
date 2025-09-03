@@ -54,8 +54,8 @@
     "projectdescription2": "Build by React&vite.js & Typescript & Tailwind & Zustand",
     "projecttitle3": "Shop project",
     "projectdescription3": "Build by React&vite.js & ReactBootstrap & ContextApi",
-    "projecttitle4": "test",
-    "projectdescription4": "test",
+    "projecttitle4": "portfolio project",
+    "projectdescription4": "Build by React&vite.js & ReactBootstrap",
     "btn": "Show more"
   },
   "contact": {
@@ -76,9 +76,9 @@
   "languageselect": {
     "language": "english"
   },
-  "notfound":{
-"title": "Page not found", 
-"desc": "The page you’re looking for doesn’t exist.", 
-"back": "Back to Home" 
+  "notfound": {
+    "title": "Page not found",
+    "desc": "The page you’re looking for doesn’t exist.",
+    "back": "Back to Home"
   }
 }

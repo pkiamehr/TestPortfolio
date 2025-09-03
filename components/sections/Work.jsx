@@ -46,10 +46,12 @@ const Work = ({ dict }) => {
         <motion.a
           href="https://project2.kiamehr.dev/"
           target="_blank"
-          rel="noopener noreferrer" whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-2.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
-          <div
-            className=" bg-white w-10/12 rounded-xl border-1 border-gray-300 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
-          >
+          rel="noopener noreferrer"
+          whileFocus={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className='aspect-square  bg-[url("/images/project-2.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'
+        >
+          <div className=" bg-white w-10/12 rounded-xl border-1 border-gray-300 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
             <div>
               <h2 className=" font-semibold">{dict.work.projecttitle2}</h2>
               <p className=" text-xs text-gray-700">{dict.work.projectdescription2}</p>
@@ -62,13 +64,33 @@ const Work = ({ dict }) => {
         <motion.a
           href="https://project3.kiamehr.dev/"
           target="_blank"
-          rel="noopener noreferrer" whileFocus={{ scale: 1.05 }} transition={{ duration: 0.3 }} className='aspect-square  bg-[url("/images/project-3.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'>
-          <div
-            className=" bg-white w-10/12 rounded-xl border-1 border-gray-300 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7"
-          >
+          rel="noopener noreferrer"
+          whileFocus={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className='aspect-square  bg-[url("/images/project-3.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'
+        >
+          <div className=" bg-white w-10/12 rounded-xl border-1 border-gray-300 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
             <div>
               <h2 className=" font-semibold">{dict.work.projecttitle3}</h2>
               <p className=" text-xs text-gray-700">{dict.work.projectdescription3}</p>
+            </div>
+            <div className=" border rounded-full border-black w-11 aspect-square flex items-center justify-center shadow:[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+              <Image src={assets.send_icon} alt="work send icon" className=" w-3" />
+            </div>
+          </div>
+        </motion.a>
+        <motion.a
+          href="https://project4.kiamehr.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileFocus={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className='aspect-square  bg-[url("/images/project-4.png")] bg-no-repeat bg-center  bg-cover rounded-lg relative group'
+        >
+          <div className=" bg-white w-10/12 rounded-xl border-1 border-gray-300 absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+            <div>
+              <h2 className=" font-semibold">{dict.work.projecttitle4}</h2>
+              <p className=" text-xs text-gray-700">{dict.work.projectdescription4}</p>
             </div>
             <div className=" border rounded-full border-black w-11 aspect-square flex items-center justify-center shadow:[2px_2px_0_#000] group-hover:bg-lime-300 transition">
               <Image src={assets.send_icon} alt="work send icon" className=" w-3" />
@@ -80,7 +102,7 @@ const Work = ({ dict }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.9 }}
-        href=""
+        href="#work"
         className=" w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-15 hover:-translate-y-1 duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
       >
         {dict.work.btn} <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt="right arrow icon" className=" w-4" />
