@@ -8,6 +8,9 @@ import { useTheme } from "@providers/ThemeProvider";
 
 const Contact = ({ dict }) => {
   const [result, setResult] = useState("");
+useEffect(() => {
+  console.log("NEXT_PUBLIC_WEB3FORMS_KEY:", process.env.NEXT_PUBLIC_WEB3FORMS_KEY);
+}, []);
 
   const onSubmit = async (event) => {
     event.preventDefault();
