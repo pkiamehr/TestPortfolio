@@ -2,25 +2,22 @@
 
 import { assets } from "@utils/assets.js";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "motion/react";
 import { useTheme } from "@providers/ThemeProvider";
 
 const Contact = ({ dict }) => {
   const [result, setResult] = useState("");
-useEffect(() => {
-  console.log("NEXT_PUBLIC_WEB3FORMS_KEY:", process.env.NEXT_PUBLIC_WEB3FORMS_KEY);
-}, []);
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+  formData.append("access_key", "880df24f-6245-4d1b-ad64-8b3857a19a78");
+      const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: formData, // مهم: بدون Content-Type
+  });
 
     const data = await response.json();
 
@@ -31,7 +28,7 @@ useEffect(() => {
       setResult(data.message);
     }
   };
-
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
