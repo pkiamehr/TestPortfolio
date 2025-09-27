@@ -23,11 +23,11 @@
     "title": "About me",
     "description": "a Front-end Developer focused on React and Next.js.I love building responsive user interfaces and creating smooth, user-friendly experiences.I have hands-on experience with APIs and a solid understanding of SEO principles, and I’m always eager to learn new things and sharpen my skills.My goal is to grow as part of a dynamic, professional team and build projects that truly make an impact. 🚀",
     "boxtitle1": "Framework/UI",
-    "boxdescription1": "React,Next.js,TailwindCss,MaterialUI,ReactBootstrap,Rest-API",
+    "boxdescription1": "React.js,Next.js,Vite.js,TailwindCss,MaterialUI,ReactBootstrap",
     "boxtitle2": "fundamentals",
-    "boxdescription2": "HTML,CSS,JavaScript(ES6+),(axios/fetch),Media-Query,Bootstrap,Responsive-Desing",
+    "boxdescription2": "HTML,CSS,JavaScript(ES6+),Rest-API(axios/fetch),ssr,ssg,Media-Query,Bootstrap,Responsive-Desing",
     "boxtitle3": "Projects",
-    "boxdescription3": "Build more than 7 projects",
+    "boxdescription3": "Build more than 8 projects",
     "tools": "Tools I use"
   },
   "services": {

@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Vazirmatn } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
 import { getDictionary } from "@lib/utils/dictionaries";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }) {
       : "Portfolio of Pejman Kiamehr, a front-end developer skilled in Next.js and React. View my projects and skills.");
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://kiamehr.dev";
-  const imageFile = "/pejman-kiamehr-profile.png";
+  const imageFile = "/pejman-kiamehr-profile.jpg";
   const imageUrl = new URL(imageFile, siteUrl).toString();
 
   return {
@@ -57,8 +58,8 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: imageUrl,
-          width: 1200, 
-          height: 630, 
+          width: 1200,
+          height: 630,
           alt: lang === "fa" ? "عکس پروفایل پژمان کیامهر توسعه‌دهنده فرانت‌اند" : "Pejman Kiamehr Front-End Developer profile photo",
         },
       ],
@@ -81,7 +82,12 @@ export default async function RootLayout({ children, params }) {
     <html lang={lang} dir={lang === "en" ? "ltr" : "rtl"}>
       <body className={`${lang === "fa" ? vazirmatn.variable : geistSans.variable} ${geistMono.variable} antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white`}>
         {children}
-
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            className: "rounded-lg font-medium",
+          }}
+        />
         <Script
           id="schema-person"
           type="application/ld+json"

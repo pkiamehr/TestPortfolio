@@ -37,7 +37,7 @@ export default function Header({ dict, lang }) {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.9 }}
-          href={lang === "fa" ? "pejman-kiamehr-resume-pe.pdf" : "Pejman-kiamehr-resume-en.pdf"}
+          href={lang === "fa" ? "Pejman_kiamehr_resume_pe.pdf" : "Pejman_kiamehr_resume_en.pdf"}
           download
           className="px-10 py-2 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black  hover:-translate-y-1 duration-500  dark:hover:bg-darkHover"
         >

@@ -4,7 +4,7 @@ import { assets } from "@utils/assets.js";
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "motion/react";
-import { useTheme } from "@providers/ThemeProvider";
+import toast from "react-hot-toast";
 
 const Contact = ({ dict }) => {
   const [result, setResult] = useState("");
@@ -13,22 +13,25 @@ const Contact = ({ dict }) => {
     event.preventDefault();
     setResult("Sending....");
     const formData = new FormData(event.target);
-  formData.append("access_key", "880df24f-6245-4d1b-ad64-8b3857a19a78");
-      const response = await fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    body: formData, // مهم: بدون Content-Type
-  });
+        formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
 
     const data = await response.json();
 
-    if (data.success) {
-      setResult("Form Submitted Successfully");
+    if (data?.success) {
+      setResult("Success");
       event.target.reset();
+      toast.success("Success");
     } else {
       setResult(data.message);
+      toast.error("error");
     }
   };
-  
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -47,7 +50,6 @@ const Contact = ({ dict }) => {
         {dict.contact.description}
       </motion.p>
       <motion.form initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.7 }} onSubmit={onSubmit} className=" max-w-2xl mx-auto">
-        <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY} />
         <div className="grid grid-template-columns:repeat(auto-fit,minmax(200px,1fr)) gap-6 mt-8 mb-7">
           <motion.input
             initial={{ x: -50, opacity: 0 }}
@@ -83,11 +85,22 @@ const Contact = ({ dict }) => {
         <motion.button
           transition={{ duration: 0.3 }}
           whileHover={{ scale: 1.05 }}
+          disabled={result === "Sending...."}
           type="submit"
           className=" cursor-pointer py-3 px-8 w-max flex items-center justify-between gap-2 bg-black text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] hover:-translate-y-1 duration-500 dark:hover:bg-darkHover"
         >
-          {dict.contact.btn}
-          <Image src={assets.right_arrow_white} alt="contact Arrow Icon" className=" w-4" />{" "}
+          {result === "Sending...." ? (
+            <>
+              {/* ✅ اینجا لودر کوچیک روی خود دکمه */}
+              <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+              {dict.contact.btn}
+            </>
+          ) : (
+            <>
+              <span>{dict.contact.btn}</span>
+              <Image src={assets.right_arrow_white} alt="arrow" className="w-4" width={16} height={16} />
+            </>
+          )}
         </motion.button>
         <p className=" mt-3">{result}</p>
       </motion.form>
